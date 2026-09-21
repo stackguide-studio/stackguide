@@ -12,6 +12,9 @@ const { title = 'StackGuide', description = '' } = Astro.props;
 		<meta name="google-site-verification" content="VJONa-ttvY3NgfjQJxFSWUsu7RZDToTuJXz4LD7MxTI" />
 		<title>{title}</title>
 		{description && <meta name="description" content={description} />}
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={Astro.url} />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VRN2C8BDW"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
